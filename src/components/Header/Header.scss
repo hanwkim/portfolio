@@ -1,0 +1,17 @@
+@use '../../styles/partials/mixin' as *;
+
+.header {
+    display: none;
+
+    @include tablet {
+        display: initial;
+    }
+
+    &__links {
+        
+        @include tablet {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}

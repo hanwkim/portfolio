@@ -1,0 +1,16 @@
+@use '../../styles/partials/mixin' as *;
+
+.menu {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+    &__icon {
+        margin: 1rem 2rem 0 0;
+
+        @include tablet {
+            display: none;
+        }
+    }
+}

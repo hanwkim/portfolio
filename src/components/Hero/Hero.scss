@@ -1,0 +1,9 @@
+@use '../../styles/partials/mixin' as *;
+
+.hero {
+
+    &__image {
+        width: 50%;
+        height: 50%;
+    }
+}
