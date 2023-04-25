@@ -10,6 +10,7 @@ export default function Menu() {
 		<nav className="menu">
 			<img
 				className="menu__icon"
+				alt="hands typing on laptop"
 				src={menuIcon}
 				onClick={() => setIsMenuClicked(!isMenuClicked)}
 			></img>

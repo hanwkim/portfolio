@@ -1,0 +1,20 @@
+@use '../../styles/partials/mixin' as *;
+
+.tech-stack {
+    width: 8rem;
+    height: 8rem;
+    border: 0.1rem black solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__image {
+        width: 3rem;
+        height: 3rem;
+        border: 0.1rem red solid;
+    }
+
+    &__name {
+        margin: 1rem 0;
+    }
+}
