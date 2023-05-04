@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "name": "React",
+        "alt": "React logo"
+    },
+    {
+        "id": 2,
+        "name": "HTML",
+        "alt": "HTML logo"
+    },
+    {
+        "id": 3,
+        "name": "CSS",
+        "alt": "CSS logo"
+    },
+    {
+        "id": 4,
+        "name": "JavaScript",
+        "alt": "JavaScript logo"
+    },
+    {
+        "id": 5,
+        "name": "Sass",
+        "alt": "Sass logo"
+    },
+    {
+        "id": 6,
+        "name": "Node.js",
+        "alt": "Node.js logo"
+    },
+    {
+        "id": 7,
+        "name": "Express.js",
+        "alt": "Express.js logo"
+    },
+    {
+        "id": 8,
+        "name": "TypeScript",
+        "alt": "TypeScript logo"
+    },
+    {
+        "id": 9,
+        "name": "MySQL",
+        "alt": "MySQL logo"
+    },
+    {
+        "id": 10,
+        "name": "Knex",
+        "alt": "Knex logo"
+    }
+]

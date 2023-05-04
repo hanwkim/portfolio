@@ -1,1 +1,14 @@
 @use '../../styles/partials/mixin' as *;
+
+.tech {
+
+    &__container {
+        margin: 0 2rem;
+    }
+
+    &__stack-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

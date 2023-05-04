@@ -1,2 +1,8 @@
 @use '../../styles/partials/mixin' as *;
 
+.about {
+
+    &__text-container {
+        margin: 0 2rem;
+    }
+}

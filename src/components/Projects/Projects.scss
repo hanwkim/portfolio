@@ -1,1 +1,12 @@
 @use '../../styles/partials/mixin' as *;
+
+.projects {
+
+    &__title {
+        margin: 0 2rem;
+    }
+
+    &__container {
+        margin: 0 2rem;
+    }
+}

@@ -1,10 +1,16 @@
-import './TechStack.scss';
+import "./TechStack.scss";
 
-export default function TechStack() {
-    return (
-        <div className="tech-stack">
-            <div className="tech-stack__image"></div>
-            <h3 className="tech-stack__name">React</h3>
-        </div>
-    )
+interface TechStackProps {
+	image: string | undefined;
+	name: string;
+	imgAlt: string;
+}
+
+export default function TechStack({ image, name, imgAlt }: TechStackProps) {
+	return (
+		<div className="tech-stack">
+			<img className="tech-stack__image" src={image} alt={imgAlt} />
+			<span className="tech-stack__name">{name}</span>
+		</div>
+	);
 }

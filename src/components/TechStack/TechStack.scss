@@ -1,17 +1,19 @@
 @use '../../styles/partials/mixin' as *;
 
 .tech-stack {
-    width: 8rem;
-    height: 8rem;
-    border: 0.1rem black solid;
+    width: 40%;
+    height: 40%;
+    max-width: 15rem;
+    // border: 0.1rem black solid;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 1rem;
 
     &__image {
-        width: 3rem;
-        height: 3rem;
-        border: 0.1rem red solid;
+        width: 50%;
+        height: 50%;
+        // border: 0.1rem red solid;
     }
 
     &__name {
