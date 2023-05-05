@@ -1,6 +1,6 @@
 import "./TechSection.scss";
 import TechStack from "../TechStack/TechStack";
-import data from "../../data/techstacks.json";
+import techstacks from "../../data/techstacks.json";
 import reactLogo from "../../assets/images/react-logo.png";
 import htmlLogo from "../../assets/images/html-logo.png";
 import cssLogo from "../../assets/images/css-logo.png";
@@ -37,7 +37,7 @@ export default function TechSection() {
 			<div className="tech__container">
 				<h2 className="tech__title">Tech Stacks</h2>
 				<div className="tech__stack-container">
-					{data.map((techstack: StackDetails) => (
+					{techstacks.map((techstack: StackDetails) => (
 						<TechStack
 							key={techstack.id}
 							image={imageArray[techstack.id - 1]}

@@ -1,9 +1,20 @@
 [
     {
+        "id": 1,
         "name": "Food Fight",
-        "description": "",
-        "link 1": "",
-        "link 2": "",
-        "link 3": ""
+        "description": "Full-stack application designed to help solve food indecision.",
+        "alt": "Screenshot for Food Fight app",
+        "tech": ["React", "Node.js", "Framer Motion", "Google Maps API"],
+        "link1": "https://github.com/hanwkim/han-kim-capstone-client",
+        "link2": "https://github.com/hanwkim/han-kim-capstone-server",
+        "link3": ""
+    },
+    {
+        "id": 2,
+        "name": "Fridge to Table",
+        "description": "Designed and built during a 24hr pair programming hackathon, this application provides recipe ideas based on ingredients in a user's fridge.",
+        "alt": "Screenshot for Fridge To Table app",
+        "tech": ["React", "Sass"],
+        "link1": "https://github.com/hanwkim/fridge-to-table"
     }
 ]
