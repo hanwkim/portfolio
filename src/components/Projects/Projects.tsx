@@ -33,6 +33,8 @@ export default function Projects() {
 						alt={project.alt}
 						tech={project.tech}
 						link1={project.link1}
+						link2={project.link2}
+						link3={project.link3}
 					/>
 				))}
 			</div>
