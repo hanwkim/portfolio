@@ -1,1 +1,14 @@
 @use '../../styles/partials/mixin' as *;
+
+.contact {
+    margin: 0 2rem;
+
+    &__link {
+        margin-right: 1rem;
+    }
+
+    &__image {
+        width: 3.6rem;
+        height: 3.6rem;
+    }
+}
