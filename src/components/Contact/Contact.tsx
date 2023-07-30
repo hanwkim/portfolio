@@ -5,7 +5,7 @@ import mailIcon from '../../assets/icons/mail.svg';
 
 export default function Contact() {
     return (
-        <section className="contact">
+        <section className="contact" id="contact">
             <h2 className="contact__title">Get In Touch</h2>
             <div className="contact__image-container">
                 <a className="contact__link" href="https://linkedin.com">

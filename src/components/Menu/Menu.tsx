@@ -4,7 +4,7 @@ import menuIcon from "../../assets/icons/menu.svg";
 import { useState } from "react";
 
 export default function Menu() {
-	const [isMenuClicked, setIsMenuClicked] = useState(false);
+	const [isMenuClicked, setIsMenuClicked] = useState<boolean>(false);
 
 	return (
 		<nav className="menu">
@@ -14,7 +14,7 @@ export default function Menu() {
 				src={menuIcon}
 				onClick={() => setIsMenuClicked(!isMenuClicked)}
 			></img>
-			{isMenuClicked && <MenuModal />}
+			{isMenuClicked && <MenuModal setIsMenuClicked={setIsMenuClicked} />}
 		</nav>
 	);
 }

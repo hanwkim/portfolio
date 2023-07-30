@@ -18,10 +18,8 @@ interface ProjectDetails {
 const imageArray = [foodFight, fridgeToTable];
 
 export default function Projects() {
-
-    console.log(projects[0].tech)
 	return (
-		<section className="projects">
+		<section className="projects" id="projects">
 			<h2 className="projects__title">Projects</h2>
 			<div className="projects__container">
 				{projects.map((project: ProjectDetails) => (

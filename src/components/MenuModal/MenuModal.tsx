@@ -1,14 +1,59 @@
 import "./MenuModal.scss";
+import closeIcon from "../../assets/icons/close.svg";
+import { Dispatch } from "react";
 
-export default function MenuModal() {
+interface ModalProps {
+	setIsMenuClicked: Dispatch<React.SetStateAction<boolean>>;
+}
+
+export default function MenuModal({ setIsMenuClicked }: ModalProps) {
 	return (
-		<nav className="menu-modal">
-			<section className="menu-modal__links">
-				<a className="menu-modal__link">Home</a>
-				<a className="menu-modal__link">About</a>
-				<a className="menu-modal__link">Projects</a>
-				<a className="menu-modal__link">Contact</a>
-			</section>
-		</nav>
+		<>
+			<nav className="menu-modal">
+				<div className="menu-modal__icon">
+					<img
+						className="menu-modal__close"
+						src={closeIcon}
+						alt="close icon"
+						onClick={() => setIsMenuClicked(false)}
+					></img>
+				</div>
+
+				<section className="menu-modal__links">
+					<a
+						className="menu-modal__link"
+						href="#hero"
+						onClick={() => setIsMenuClicked(false)}
+					>
+						Home
+					</a>
+					<a
+						className="menu-modal__link"
+						href="#about"
+						onClick={() => setIsMenuClicked(false)}
+					>
+						About
+					</a>
+					<a
+						className="menu-modal__link"
+						href="#projects"
+						onClick={() => setIsMenuClicked(false)}
+					>
+						Projects
+					</a>
+					<a
+						className="menu-modal__link"
+						href="#contact"
+						onClick={() => setIsMenuClicked(false)}
+					>
+						Contact
+					</a>
+				</section>
+			</nav>
+			<div
+				className="menu-background"
+				onClick={() => setIsMenuClicked(false)}
+			></div>
+		</>
 	);
 }
