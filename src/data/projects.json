@@ -1,20 +1,30 @@
 [
-    {
-        "id": 1,
-        "name": "Food Fight",
-        "description": "Full-stack application designed to help solve food indecision.",
-        "alt": "Screenshot for Food Fight app",
-        "tech": ["React", "Node.js", "Framer Motion", "Google Maps API"],
-        "link1": "https://github.com/hanwkim/han-kim-capstone-client",
-        "link2": "https://github.com/hanwkim/han-kim-capstone-server",
-        "link3": ""
-    },
+	{
+		"id": 1,
+		"name": "Food Fight",
+		"description": "Full-stack application designed to help solve food indecision, as well as give the user real restaurant listings with details such as map locations and reviews.",
+		"alt": "Screenshot for Food Fight app",
+		"tech": ["React", "Node.js", "Express", "Framer Motion", "Google Maps API", "Sass"],
+		"link1": "https://github.com/hanwkim/han-kim-capstone-client",
+		"link2": "https://github.com/hanwkim/han-kim-capstone-server",
+		"link3": ""
+	},
     {
         "id": 2,
-        "name": "Fridge to Table",
-        "description": "Designed and built during a 24hr pair programming hackathon, this application provides recipe ideas based on ingredients in a user's fridge.",
-        "alt": "Screenshot for Fridge To Table app",
-        "tech": ["React", "Sass"],
-        "link1": "https://github.com/hanwkim/fridge-to-table"
-    }
+        "name": "inStock",
+        "description": "CRUD app built collaboratively that tracks different warehouses and each of their unique inventories.",
+        "alt": "Screenshot for inStock app",
+        "tech": ["React", "Node.js", "Express", "MySQL", "Knex", "Sass"],
+        "link1": "https://github.com/hanwkim/instock",
+        "link2": "",
+        "link3": ""
+    },
+	{
+		"id": 3,
+		"name": "Fridge to Table",
+		"description": "Designed and built during a 24hr pair programming hackathon, this application provides recipe ideas based on ingredients in a user's fridge.",
+		"alt": "Screenshot for Fridge To Table app",
+		"tech": ["React", "Sass"],
+		"link1": "https://github.com/hanwkim/fridge-to-table"
+	}
 ]

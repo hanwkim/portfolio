@@ -11,7 +11,7 @@ export default function Hero() {
 					alt="hands on laptop keyboard"
 				></img>
 				<section className="hero__text-container">
-					<p className="hero__title">Hi, I'm Han.</p>
+					<h1 className="hero__title">Hi, I'm Han.</h1>
 					<p className="hero__text">
 						I'm a full-stack engineer with a passion for creating
 						cool stuff and learning new technologies.

@@ -7,10 +7,13 @@ export default function About() {
 			<div className="about__text-container">
 				<h2 className="about__title">About Me</h2>
 				<p className="about__text">
-					Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-					Dolor hic, assumenda accusantium animi iure culpa a rem
-					minima ipsa beatae nesciunt dolorem in laboriosam ex quaerat
-					rerum repudiandae cupiditate iste!
+					My name is Han Kim, and I'm a software engineer with
+					backgrounds in music and finance. From a young age, I've had
+					a love for being creative, working with numbers, and solving
+					problems. Coding provides a way to do all of those things
+					and more, and I'm excited to continue learning new tech,
+					improving my coding skills, and building apps that make an
+					impact.
 				</p>
 			</div>
 			<TechSection />

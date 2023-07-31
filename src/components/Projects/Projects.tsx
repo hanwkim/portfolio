@@ -3,6 +3,7 @@ import Project from "../Project/Project";
 import projects from "../../data/projects.json";
 import fridgeToTable from "../../assets/images/fridge-to-table.PNG";
 import foodFight from "../../assets/images/food-fight.PNG";
+import inStock from "../../assets/images/instock.PNG";
 
 interface ProjectDetails {
 	id: number;
@@ -15,7 +16,7 @@ interface ProjectDetails {
 	link3?: string;
 }
 
-const imageArray = [foodFight, fridgeToTable];
+const imageArray = [foodFight, inStock, fridgeToTable];
 
 export default function Projects() {
 	return (
