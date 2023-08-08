@@ -1,6 +1,7 @@
 import "./MenuModal.scss";
 import closeIcon from "../../assets/icons/close.svg";
 import { Dispatch } from "react";
+import { motion } from "framer-motion";
 
 interface ModalProps {
 	setIsMenuClicked: Dispatch<React.SetStateAction<boolean>>;
@@ -9,7 +10,12 @@ interface ModalProps {
 export default function MenuModal({ setIsMenuClicked }: ModalProps) {
 	return (
 		<>
-			<nav className="menu-modal">
+			<motion.nav
+				className="menu-modal"
+				initial={{ x: 500 }}
+				animate={{ x: 0 }}
+				transition={{ ease: "easeInOut", duration: 0.25 }}
+			>
 				<div className="menu-modal__icon">
 					<img
 						className="menu-modal__close"
@@ -49,7 +55,7 @@ export default function MenuModal({ setIsMenuClicked }: ModalProps) {
 						Contact
 					</a>
 				</section>
-			</nav>
+			</motion.nav>
 			<div
 				className="menu-background"
 				onClick={() => setIsMenuClicked(false)}

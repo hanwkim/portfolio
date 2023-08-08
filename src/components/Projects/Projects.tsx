@@ -1,9 +1,6 @@
 import "./Projects.scss";
 import Project from "../Project/Project";
 import projectsData from "../../data/projects.json";
-import fridgeToTable from "../../assets/images/fridge-to-table.PNG";
-import foodFight from "../../assets/images/food-fight.PNG";
-import inStock from "../../assets/images/instock.PNG";
 import {
 	foodFightArr,
 	inStockArr,
