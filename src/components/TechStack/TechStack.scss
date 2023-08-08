@@ -4,16 +4,21 @@
     width: 40%;
     height: 40%;
     max-width: 10rem;
-    // border: 0.1rem black solid;
+    border-radius: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 1rem;
+    transition: box-shadow 0.5s;
+
+    &:hover {
+        box-shadow: 0.5rem 0.5rem 0.9rem 0 grey;
+    }
 
     &__image {
         width: 50%;
         height: 50%;
-        // border: 0.1rem red solid;
+        padding-top: 0.5rem;
     }
 
     &__name {

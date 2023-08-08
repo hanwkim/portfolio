@@ -15,7 +15,7 @@
         "description": "CRUD app built collaboratively that tracks different warehouses and each of their unique inventories.",
         "alt": "Screenshot for inStock app",
         "tech": ["React", "Node.js", "Express", "MySQL", "Knex", "Sass"],
-        "link1": "https://github.com/hanwkim/instock",
+        "link1": "",
         "link2": "",
         "link3": ""
     },
@@ -24,7 +24,7 @@
 		"name": "Fridge to Table",
 		"description": "Designed and built during a 24hr pair programming hackathon, this application provides recipe ideas based on ingredients in a user's fridge.",
 		"alt": "Screenshot for Fridge To Table app",
-		"tech": ["React", "Sass"],
+		"tech": ["React", "Node.js", "Express", "Sass"],
 		"link1": "https://github.com/hanwkim/fridge-to-table"
 	}
 ]

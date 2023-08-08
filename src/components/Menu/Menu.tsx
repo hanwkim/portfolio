@@ -8,13 +8,15 @@ export default function Menu() {
 
 	return (
 		<nav className="menu">
-			<img
-				className="menu__icon"
-				alt="hands typing on laptop"
-				src={menuIcon}
-				onClick={() => setIsMenuClicked(!isMenuClicked)}
-			></img>
-			{isMenuClicked && <MenuModal setIsMenuClicked={setIsMenuClicked} />}
+				<img
+					className="menu__icon"
+					alt="hands typing on laptop"
+					src={menuIcon}
+					onClick={() => setIsMenuClicked(!isMenuClicked)}
+				></img>
+				{isMenuClicked && (
+					<MenuModal setIsMenuClicked={setIsMenuClicked} />
+				)}
 		</nav>
 	);
 }
