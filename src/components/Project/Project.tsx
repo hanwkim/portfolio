@@ -23,27 +23,29 @@ export default function Project({
 	link2,
 	link3,
 }: ProjectProps) {
-
 	return (
 		<section className="project">
 			<div className="project__container">
 				<h3 className="project__title">{name}</h3>
 				<div className="project__image-container">
 					<Carousel data-bs-theme="dark" interval={null}>
-						{images.map(image => (
+						{images.map((image) => (
 							<Carousel.Item>
-								<div className="project__image-holder">
-								<Image className="project__image carousel-item d-block" src={image} alt={alt} fluid />
-								</div>
+								<Image
+									className="project__image carousel-item d-block"
+									src={image}
+									alt={alt}
+									fluid
+								/>
 							</Carousel.Item>
 						))}
 					</Carousel>
 				</div>
 				<p className="project__description">{description}</p>
 				<div className="project__links">
-					{link1 && <a href={link1}>Github</a>}
-					{link2 && <a href={link2}>Github</a>}
-					{link3 && <a href={link3}>Demo</a>}
+					{link1 && <a className="project__link" target="_blank" rel="noreferrer" href={link1}>Code - Client</a>}
+					{link2 && <a className="project__link" target="_blank" rel="noreferrer" href={link2}>Code - Server</a>}
+					{link3 && <a className="project__link" target="_blank" rel="noreferrer" href={link3}>Demo</a>}
 				</div>
 				<div className="project__techstacks">
 					{tech.map((stack) => (

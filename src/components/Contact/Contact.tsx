@@ -15,6 +15,13 @@ export default function Contact() {
 				</p>
 			</div>
 			<div className="contact__image-container">
+				<a className="contact__link" href="https://gmail.com">
+					<img
+						className="contact__image"
+						src={mailIcon}
+						alt="Email icon"
+					></img>
+				</a>
 				<a className="contact__link" href="https://linkedin.com">
 					<img
 						className="contact__image"
@@ -27,13 +34,6 @@ export default function Contact() {
 						className="contact__image"
 						src={githubIcon}
 						alt="github icon"
-					></img>
-				</a>
-				<a className="contact__link" href="https://gmail.com">
-					<img
-						className="contact__image"
-						src={mailIcon}
-						alt="Email icon"
 					></img>
 				</a>
 			</div>

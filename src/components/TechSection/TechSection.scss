@@ -6,6 +6,11 @@
         margin: 0 2.5rem;
     }
 
+    &__title {
+        font-size: 3.2rem;
+        margin-bottom: 2rem;
+    }
+
     &__stack-container {
         display: flex;
         flex-wrap: wrap;
