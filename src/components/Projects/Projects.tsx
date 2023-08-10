@@ -22,7 +22,9 @@ const imageArray = [foodFightArr, inStockArr, fridgeToTableArr];
 
 export default function Projects() {
 	return (
-		<section className="projects" id="projects">
+		<>
+		<div className="projects__divider" id="projects"></div>
+		<section className="projects">
 			<h2 className="projects__title">Projects</h2>
 			<div className="projects__container">
 				{projectsData.map((project: ProjectDetails) => (
@@ -40,5 +42,6 @@ export default function Projects() {
 				))}
 			</div>
 		</section>
+		</>
 	);
 }

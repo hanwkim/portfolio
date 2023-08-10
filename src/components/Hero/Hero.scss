@@ -2,6 +2,7 @@
 
 .hero {
     padding-top: 2rem;
+    background-color: #FFD966;
 
     &__container {
         display: flex;
@@ -17,7 +18,7 @@
         border-radius: 50%;
         height: 28rem;
         width: 28rem;
-        background-image: url("../../assets/images/avatar.png");
+        background-image: url("../../assets/images/avatar6.png");
         background-position: center;
         background-size: contain;
 
@@ -33,5 +34,9 @@
         font-size: 4rem;
         margin: 2rem 0;
         font-weight: 700;
+    }
+
+    &__text {
+        margin-bottom: 0;
     }
 }

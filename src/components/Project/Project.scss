@@ -1,8 +1,9 @@
 @use '../../styles/partials/mixin' as *;
+@use '../../styles/partials/color' as *;
 @import '~bootstrap/scss/bootstrap';
 
 .project {
-    margin-bottom: 2rem;
+    padding-bottom: 2rem;
 
     &__title {
         font-size: 2.2rem;
@@ -26,8 +27,15 @@
         font-size: 1.4rem;
         margin-right: 0.2rem;
         border: 0.1rem solid black;
-        border-radius: 5%;
+        border-radius: 0.2rem;
         padding: 0.1rem;
+        background-color: $secondary-color;
+        transition: all 0.3s;
+
+        &:hover {
+            background-color: #000;
+            color: $primary-color-light;
+        }
     }
 
     &__techstacks {
@@ -37,11 +45,19 @@
 
     &__techstack {
         font-size: 1.2rem;
+        color: $primary-color-light;
         margin-top: 0.2rem;
         margin-right: 0.2rem;
         border: 0.1rem solid black;
-        border-radius: 5%;
+        border-radius: 0.2rem;
         padding: 0 0.1rem;
         cursor: default;
+        background-color: #000;
+        transition: all 0.3s;
+
+        &:hover {
+            background-color: $secondary-color;
+            color: #000;
+        }
     }
 }
