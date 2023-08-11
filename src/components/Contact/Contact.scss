@@ -6,16 +6,18 @@
 
     &__divider {
         padding-bottom: 3.5rem;
-        background-color: #FFD966;
+        background-color: $primary-color-dark;
     }
 
     &__container {
-        margin: 0 2.5rem;
+        margin: 0 auto;
+        max-width: 68.8rem;
     }
 
     &__title {
         font-size: 3.2rem;
-        margin-bottom: 2rem;
+        font-weight: 600;
+        margin: 0 2.5rem 2rem 2.5rem;
     }
 
     &__image-container {
@@ -25,11 +27,16 @@
 
     &__image {
         width: 100%;
-        max-width: 40rem;
+        max-width: 30rem;
+    }
+
+    &__text-container {
+        margin: 0 2.5rem;
     }
 
     &__text {
         margin-bottom: 1.5rem;
+        font-size: 1.4rem;
     }
 
     &__links {

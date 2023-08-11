@@ -23,25 +23,27 @@ const imageArray = [foodFightArr, inStockArr, fridgeToTableArr];
 export default function Projects() {
 	return (
 		<>
-		<div className="projects__divider" id="projects"></div>
-		<section className="projects">
-			<h2 className="projects__title">Projects</h2>
-			<div className="projects__container">
-				{projectsData.map((project: ProjectDetails) => (
-					<Project
-						key={project.id}
-						name={project.name}
-						images={imageArray[project.id - 1]}
-						description={project.description}
-						alt={project.alt}
-						tech={project.tech}
-						link1={project.link1}
-						link2={project.link2}
-						link3={project.link3}
-					/>
-				))}
-			</div>
-		</section>
+			<div className="projects__divider" id="projects"></div>
+			<section className="projects">
+				<div className="projects__container">
+					<h2 className="projects__title">Projects</h2>
+					<div className="projects__project-container">
+						{projectsData.map((project: ProjectDetails) => (
+							<Project
+								key={project.id}
+								name={project.name}
+								images={imageArray[project.id - 1]}
+								description={project.description}
+								alt={project.alt}
+								tech={project.tech}
+								link1={project.link1}
+								link2={project.link2}
+								link3={project.link3}
+							/>
+						))}
+					</div>
+				</div>
+			</section>
 		</>
 	);
 }

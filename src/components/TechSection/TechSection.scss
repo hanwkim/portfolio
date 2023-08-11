@@ -1,19 +1,32 @@
 @use '../../styles/partials/mixin' as *;
+@use '../../styles/partials/color' as *;
 
 .tech {
+    background-color: $primary-color-light;
 
     &__container {
-        margin: 0 2.5rem;
+        margin: 0 auto;
+        max-width: 68.8rem;
     }
 
     &__title {
+        margin: 0 2.5rem;
         font-size: 3.2rem;
+        font-weight: 600;
         margin-bottom: 2rem;
     }
 
-    &__stack-container {
+    &__stacks-container {
+        display: flex;
+        justify-content: center;
+        margin: 0 2.5rem;
+    }
+
+    &__stacks {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        width: 100%;
+        max-width: 50rem;
     }
 }

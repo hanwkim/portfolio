@@ -5,6 +5,11 @@
 .project {
     padding-bottom: 2rem;
 
+    &__container {
+        margin: 0 auto;
+        max-width: 48rem;
+    }
+
     &__title {
         font-size: 2.2rem;
         margin-bottom: 1.5rem;
@@ -19,16 +24,21 @@
         height: 100%;
     }
 
+    &__description {
+        font-size: 1.4rem;
+    }
+
     &__links {
         margin-bottom: 1rem;
     }
 
     &__link {
         font-size: 1.4rem;
+        font-weight: 600;
         margin-right: 0.2rem;
         border: 0.1rem solid black;
         border-radius: 0.2rem;
-        padding: 0.1rem;
+        padding: 0.2rem;
         background-color: $secondary-color;
         transition: all 0.3s;
 

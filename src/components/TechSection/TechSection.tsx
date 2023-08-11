@@ -13,9 +13,9 @@ import mysqlLogo from "../../assets/images/mysql-logo.png";
 import knexLogo from "../../assets/images/knex-logo.png";
 
 interface StackDetails {
-    id: number;
-    name: string;
-    alt: string;
+	id: number;
+	name: string;
+	alt: string;
 }
 
 const imageArray: string[] = [
@@ -35,17 +35,19 @@ export default function TechSection() {
 	return (
 		<section className="tech">
 			<div className="tech__container">
-				<h2 className="tech__title">Tech Stacks</h2>
-				<div className="tech__stack-container">
-					{techstacks.map((techstack: StackDetails) => (
-						<TechStack
-							key={techstack.id}
-							image={imageArray[techstack.id - 1]}
-							name={techstack.name}
-							imgAlt={techstack.alt}
-						/>
-					))}
-				</div>
+				<h2 className="tech__title">Technologies</h2>
+				<section className="tech__stacks-container">
+					<div className="tech__stacks">
+						{techstacks.map((techstack: StackDetails) => (
+							<TechStack
+								key={techstack.id}
+								image={imageArray[techstack.id - 1]}
+								name={techstack.name}
+								imgAlt={techstack.alt}
+							/>
+						))}
+					</div>
+				</section>
 			</div>
 		</section>
 	);

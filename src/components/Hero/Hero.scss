@@ -5,13 +5,16 @@
     background-color: #FFD966;
 
     &__container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0 2.5rem;
+        max-width: 68.8rem;
+        margin: 0 auto;
     }
 
     &__image-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__image {
         display: flex;
         justify-content: center;
         border: 0.1rem solid black;
@@ -24,19 +27,14 @@
 
     }
 
-    &__image {
-        width: 75%;
-        aspect-ratio: 1/1;
-        max-width: 40rem;
-    }
-
     &__title {
         font-size: 4rem;
-        margin: 2rem 0;
+        margin: 2rem 2.5rem 1rem 2.5rem;
         font-weight: 700;
     }
 
     &__text {
-        margin-bottom: 0;
+        margin: 0 2.5rem 0 2.5rem;
+        font-size: 2.2rem;
     }
 }
