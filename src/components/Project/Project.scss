@@ -4,15 +4,26 @@
 
 .project {
     padding-bottom: 2rem;
+    flex-grow: 1;
+
+    @include tablet {
+        margin-left: 0.6rem;
+        padding-bottom: 2.5rem;
+    }
 
     &__container {
         margin: 0 auto;
-        max-width: 48rem;
+        max-width: 46rem;
     }
 
     &__title {
         font-size: 2.2rem;
         margin-bottom: 1.5rem;
+
+        @include tablet {
+            font-size: 2.8rem;
+            margin-bottom: 2rem;
+        }
     }
 
     &__image-container {
@@ -26,6 +37,10 @@
 
     &__description {
         font-size: 1.4rem;
+
+        @include tablet {
+            font-size: 1.8rem;
+        }
     }
 
     &__links {
@@ -45,6 +60,11 @@
         &:hover {
             background-color: #000;
             color: $primary-color-light;
+        }
+
+        @include tablet {
+            font-size: 1.8rem;
+            padding: 0.2rem 0.3rem;
         }
     }
 
@@ -68,6 +88,11 @@
         &:hover {
             background-color: $secondary-color;
             color: #000;
+        }
+
+        @include tablet {
+            font-size: 1.4rem;
+            padding: 0 0.2rem;
         }
     }
 }

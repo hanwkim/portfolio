@@ -9,3 +9,8 @@
         @content;
     }
 }
+
+@mixin desktop-sizing {
+    max-width: 102rem;
+    margin: 0 auto;
+}

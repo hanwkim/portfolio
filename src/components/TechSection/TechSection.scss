@@ -7,13 +7,21 @@
     &__container {
         margin: 0 auto;
         max-width: 68.8rem;
+
+        @include tablet {
+            @include desktop-sizing;
+        }
     }
 
     &__title {
-        margin: 0 2.5rem;
+        margin: 0 2.5rem 2rem 2.5rem;
         font-size: 3.2rem;
         font-weight: 600;
-        margin-bottom: 2rem;
+
+        @include tablet {
+            margin: 0 4rem 2.5rem 4rem;
+            font-size: 4.2rem;
+        }
     }
 
     &__stacks-container {
@@ -28,5 +36,9 @@
         justify-content: center;
         width: 100%;
         max-width: 50rem;
+
+        @include tablet {
+            max-width: 76rem;
+        }
     }
 }

@@ -1,17 +1,46 @@
 @use '../../styles/partials/mixin' as *;
+@use '../../styles/partials/color' as *;
 
 .header {
     display: none;
+    background-color: $primary-color-dark;
+    box-shadow: 0 0.1rem 0.9rem 0 grey;
 
     @include tablet {
-        display: initial;
+        display: block;
+        position: sticky;
+        top: 0;
+        z-index: 5;
+        height: 6.6rem;
+    }
+
+    &__container {
+
+        @include tablet {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            height: 100%;
+            @include desktop-sizing;
+        }
     }
 
     &__links {
         
         @include tablet {
-            display: flex;
-            justify-content: space-between;
+            margin: 0 4rem;
+        }
+    }
+
+    &__link {
+        font-size: 2.2rem;
+        font-weight: 600;
+        margin-left: 2rem;
+        border-bottom: 0.2rem solid transparent;
+        transition: border-color 0.3s;
+
+        &:hover {
+            border-color: #000;
         }
     }
 }

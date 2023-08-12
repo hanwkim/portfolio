@@ -1,40 +1,63 @@
 @use '../../styles/partials/mixin' as *;
+@use '../../styles/partials/color' as *;
 
 .hero {
-    padding-top: 2rem;
-    background-color: #FFD966;
+    padding-top: 2.5rem;
+    background-color: $primary-color-dark;
 
     &__container {
         max-width: 68.8rem;
         margin: 0 auto;
+
+        @include tablet {
+            @include desktop-sizing;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            align-items: center;
+        }
     }
 
     &__image-container {
         display: flex;
         justify-content: center;
+
+        @include tablet {
+
+        }
     }
 
     &__image {
-        display: flex;
-        justify-content: center;
-        border: 0.1rem solid black;
+        border: 0.2rem solid black;
         border-radius: 50%;
         height: 28rem;
         width: 28rem;
         background-image: url("../../assets/images/avatar6.png");
         background-position: center;
         background-size: contain;
-
+        
+        @include tablet {
+            height: 34rem;
+            width: 34rem;
+        }
     }
 
     &__title {
         font-size: 4rem;
         margin: 2rem 2.5rem 1rem 2.5rem;
         font-weight: 700;
+
+        @include tablet {
+            font-size: 5rem;
+        }
     }
 
     &__text {
         margin: 0 2.5rem 0 2.5rem;
         font-size: 2.2rem;
+
+        @include tablet {
+            font-size: 2.8rem;
+        }
     }
 }

@@ -4,20 +4,37 @@
 .contact {
     padding-top: 3.5rem;
 
+    @include tablet {
+        padding-top: 4.1rem;
+    }
+
     &__divider {
         padding-bottom: 3.5rem;
         background-color: $primary-color-dark;
+
+        @include tablet {
+            padding-bottom: 4.1rem;
+        }
     }
 
     &__container {
         margin: 0 auto;
         max-width: 68.8rem;
+
+        @include tablet {
+            @include desktop-sizing;
+        }
     }
 
     &__title {
         font-size: 3.2rem;
         font-weight: 600;
         margin: 0 2.5rem 2rem 2.5rem;
+
+        @include tablet {
+            font-size: 4.2rem;
+            margin: 0 4rem 2.5rem 4rem;
+        }
     }
 
     &__image-container {
@@ -28,15 +45,28 @@
     &__image {
         width: 100%;
         max-width: 30rem;
+
+        @include tablet {
+            max-width: 36rem;
+        }
     }
 
     &__text-container {
         margin: 0 2.5rem;
+
+        @include tablet {
+            margin: 0 4rem;
+        }
     }
 
     &__text {
         margin-bottom: 1.5rem;
         font-size: 1.4rem;
+
+        @include tablet {
+            margin-bottom: 2rem;
+            font-size: 1.8rem;
+        }
     }
 
     &__links {
@@ -51,7 +81,7 @@
         justify-content: space-between;
         align-items: center;
         width: 50%;
-        max-width: 30rem;
+        max-width: 36rem;
         margin-bottom: 1.5rem;
         border: 0.2rem solid black;
         border-radius: 0.5rem;
@@ -62,11 +92,20 @@
             background-color: #000;
             color: $primary-color-light;
         }
+
+        @include tablet {
+            margin-bottom: 2rem;
+        }
     }
 
     &__link-text {
         margin-left: 0.5rem;
         font-weight: 600;
+
+        @include tablet {
+            font-size: 2rem;
+            margin-left: 0.8rem;
+        }
     }
 
     &__link-image {
@@ -77,6 +116,12 @@
 
         &--hover {
             filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(73deg) brightness(105%) contrast(104%);
+        }
+
+        @include tablet {
+            width: 4rem;
+            height: 4rem;
+            margin-right: 0.8rem;
         }
     }
 }

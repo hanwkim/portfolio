@@ -13,13 +13,25 @@
         box-shadow: 0.5rem 0.5rem 0.9rem 0 grey;
     }
 
+    @include tablet {
+        max-width: 15rem;
+    }
+
     &__image {
         width: 50%;
         padding-top: 0.5rem;
+
+        @include tablet {
+            padding: 1rem 0;
+        }
     }
 
     &__name {
         margin: 1rem 0;
         font-size: 1.4rem;
+
+        @include tablet {
+            font-size: 1.8rem;
+        }
     }
 }
