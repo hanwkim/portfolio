@@ -3,7 +3,7 @@ import ContactLink from "../ContactLink/ContactLink";
 import githubIcon from "../../assets/icons/github.svg";
 import linkedinIcon from "../../assets/icons/linkedin.svg";
 import mailIcon from "../../assets/icons/mail.svg";
-import computerImage from "../../assets/images/hero-image.svg";
+import computerImage from "../../assets/images/contact-image.svg";
 
 interface LinkInterface {
 	id: number;

@@ -43,9 +43,9 @@ export default function Project({
 				</div>
 				<p className="project__description">{description}</p>
 				<div className="project__links">
-					{link1 && <a className="project__link" target="_blank" rel="noreferrer" href={link1}>Code - Client</a>}
-					{link2 && <a className="project__link" target="_blank" rel="noreferrer" href={link2}>Code - Server</a>}
-					{link3 && <a className="project__link" target="_blank" rel="noreferrer" href={link3}>Demo</a>}
+					{link1 && <a className="project__link" target="_blank" rel="noreferrer" href={link1}>Code</a>}
+					{link2 && <a className="project__link" target="_blank" rel="noreferrer" href={link2}>Demo Video</a>}
+					{link3 && <a className="project__link" target="_blank" rel="noreferrer" href={link3}>Live Demo</a>}
 				</div>
 				<div className="project__techstacks">
 					{tech.map((stack) => (
