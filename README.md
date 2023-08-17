@@ -1,6 +1,6 @@
 # Portfolio Site
 
-Welcome to the repository for my portfolio site!
+Welcome to the repository for my portfolio site! The live site can be found [here](https://hwkim.vercel.app).
 
 # Installation
 
