@@ -6,14 +6,13 @@
     background-color: $primary-color-dark;
 
     &__container {
-        max-width: 68.8rem;
+        max-width: 73.8rem;
         margin: 0 auto;
 
         @include tablet {
             @include desktop-sizing;
             display: flex;
-            flex-direction: row-reverse;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
         }
     }
@@ -23,7 +22,7 @@
         justify-content: center;
 
         @include tablet {
-
+            margin-left: 4rem;
         }
     }
 
